@@ -159,9 +159,17 @@ span {
   font-weight: 500;
 }
 
+@media (min-width: 375px) {
+  .generation_content {
+    background-image: url(/bg-intro-desktop.d745898a.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .reason {
   background-color: #f3f4f6;
-  text-align: center;
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
@@ -169,13 +177,48 @@ span {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 .reason ul {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
+.reason ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reason ul li p {
+  text-align: center;
+}
 
+@media (min-width: 375px) {
+  .reason article {
+    text-align: start;
+    padding-bottom: 2rem;
+  }
+  .reason article p {
+    width: 52%;
+  }
+  .reason .list_content {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .reason .list_content li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .reason .list_content li p {
+    text-align: start;
+  }
+}
 .latest_content {
   width: 90%;
   margin-left: auto;
@@ -210,6 +253,12 @@ span {
   margin-right: auto;
 }
 
+@media (min-width: 375px) {
+  .latest_list {
+    display: flex;
+    gap: 1rem;
+  }
+}
 footer {
   text-align: center;
   background-color: #343a40;
@@ -231,6 +280,36 @@ footer nav .list_link > li > a {
 }
 footer nav ul {
   margin: 0;
+}
+
+@media (min-width: 375px) {
+  footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  footer nav .list_link {
+    display: grid;
+    grid-template-areas: "about careers" "contact  support" "blog  police";
+    gap: 0.75rem;
+    text-align: start;
+    column-gap: 16rem;
+  }
+  footer nav .list_link .list_item {
+    grid-area: about;
+  }
+  footer nav .list_link .list_itemContact {
+    grid-area: contact;
+  }
+  footer nav .list_link .list_itemBlog {
+    grid-area: blog;
+  }
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */

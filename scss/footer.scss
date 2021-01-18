@@ -21,3 +21,40 @@ footer {
   }
 
 }
+@media(min-width:375px) {
+  footer {
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+      .list_link {
+        display:grid;
+        grid-template-areas: "about careers"
+                             "contact  support"
+                             "blog  police";
+        gap: 0.75rem;
+        text-align: start;
+        column-gap: 16rem;
+      .list_item {
+        grid-area: about;
+      }
+      .list_itemContact {
+        grid-area: contact;
+      }
+      .list_itemBlog {
+        grid-area: blog;
+      }
+      
+      }
+
+    }
+
+
+  }
+}

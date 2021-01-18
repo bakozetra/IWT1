@@ -34,3 +34,9 @@
     }
   }
 }
+@media(min-width : 375px) {
+  .latest_list {
+    display: flex;
+    gap: 1rem;
+  }
+}
