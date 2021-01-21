@@ -24,6 +24,25 @@
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
+    background-position: 275% 74%;
+    background-size: 85%;
+
+    img {
+      position: absolute;
+      width: 50%;
+      right: -4rem;
+    }
+    div {
+      padding-bottom: 10rem;
+      h1 {
+        width: 40%;
+      }
+      p {
+        width: 30%;
+      }
+    }
+
    }
  }
 

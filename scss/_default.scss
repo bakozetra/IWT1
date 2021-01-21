@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 li {
  list-style: none;
@@ -15,6 +16,14 @@ ul {
 }
 main {
   background-color:  #f8f9fa;
+}
+button {
+  border-radius: 22px;
+  width: 155px;
+  height: 42px;
+  background: linear-gradient( to right ,#31d35c , #2bb7da);
+  border:none;
+  outline: none;
 }
 
 

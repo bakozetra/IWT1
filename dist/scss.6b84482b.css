@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 li {
@@ -19,6 +20,15 @@ ul {
 
 main {
   background-color: #f8f9fa;
+}
+
+button {
+  border-radius: 22px;
+  width: 155px;
+  height: 42px;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border: none;
+  outline: none;
 }
 
 .navigation {
@@ -89,9 +99,10 @@ body > [type=checkbox] {
 .checkbox_input:checked ~ nav {
   transform: translateX(0);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  top: 5rem;
+  bottom: 4rem;
+  right: 1rem;
+  left: 1rem;
   z-index: 1;
   width: 250px;
   background-color: white;
@@ -166,6 +177,23 @@ span {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
+    background-position: 275% 74%;
+    background-size: 85%;
+  }
+  .generation_content img {
+    position: absolute;
+    width: 50%;
+    right: -4rem;
+  }
+  .generation_content div {
+    padding-bottom: 10rem;
+  }
+  .generation_content div h1 {
+    width: 40%;
+  }
+  .generation_content div p {
+    width: 30%;
   }
 }
 .reason {
@@ -232,7 +260,8 @@ span {
 }
 .latest_content article section img {
   width: 100%;
-  border-radius: 0.3rem 0.3rem 0 0;
+  border-radius: 0.4rem 0.4rem 0 0;
+  height: calc(100% * 2/5);
 }
 .latest_content article section div {
   margin: 0;
@@ -241,7 +270,7 @@ span {
   padding-bottom: 1rem;
   padding-top: 1rem;
   margin-bottom: 2rem;
-  border-radius: 0 0 0.3rem 0.3rem;
+  border-radius: 0 0 0.4rem 0.4rem;
 }
 .latest_content article section div p {
   color: #9698a6;
@@ -280,6 +309,9 @@ footer nav .list_link > li > a {
 }
 footer nav ul {
   margin: 0;
+}
+footer small {
+  color: white;
 }
 
 @media (min-width: 375px) {

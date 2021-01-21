@@ -11,7 +11,8 @@
       
       img {
         width: 100%;
-        border-radius: 0.3rem 0.3rem 0 0;
+        border-radius: 0.4rem 0.4rem 0 0;
+        height: calc(100% * 2/5);
       }
       div {
         margin: 0;
@@ -20,7 +21,7 @@
         padding-bottom: 1rem;
         padding-top: 1rem;
         margin-bottom: 2rem;
-        border-radius: 0 0 0.3rem 0.3rem;
+        border-radius: 0 0 0.4rem 0.4rem;
         p {
           color:hsl(233, 8%, 62%);
           margin : 0;
