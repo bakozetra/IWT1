@@ -78,6 +78,9 @@ button {
   position: absolute;
   right: 1rem;
 }
+.menu-header button {
+  display: none;
+}
 
 body > [type=checkbox] {
   display: none;
@@ -128,7 +131,8 @@ span {
     flex-direction: row;
     display: flex;
     position: absolute;
-    right: 4rem;
+    right: 34%;
+    position: absolute;
   }
   .navigation ul li {
     background-repeat: no-repeat;
@@ -149,6 +153,12 @@ span {
 
   .profile {
     display: none;
+  }
+
+  .menu-header button {
+    display: block;
+    position: absolute;
+    right: 4rem;
   }
 }
 .generation_content {
