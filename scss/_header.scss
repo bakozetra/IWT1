@@ -1,6 +1,7 @@
 .navigation {
   transform: translateX(-180px);
   position: absolute;
+ 
   ul {
     position: absolute;
     list-style: none;
@@ -34,6 +35,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  
   label {
     display: block;
     width: 2rem;
